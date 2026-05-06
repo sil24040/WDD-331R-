@@ -1,0 +1,25 @@
+.site-nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: var(--space-medium);
+   padding: var(--space-medium) 0;
+
+   a {
+       display: inline-flex;
+       align-items: center;
+       gap: 0.35rem;
+       padding: 0.5rem 0.75rem;
+       border-radius: var(--radius-base);
+       text-decoration: none;
+
+       &:not(.current):hover {
+           background: var(--color-accent);
+       }
+
+       &:focus-visible {
+           outline: 3px solid var(--color-focus);
+           outline-offset: 3px;
+       }
+   }
+}
