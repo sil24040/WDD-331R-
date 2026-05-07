@@ -2,7 +2,7 @@
 
 **Student:** Sophie Da Silveira  
 **Semester:** Spring 2026  
-**Live Site:** [View Site](https://github.com/sil24040/WDD-331R-.git)
+**Live Site:** [View Site](https://sil24040.github.io/WDD-331R-/)
 
 ## About
 This repository is my Practice Site for WDD 331R: Advanced CSS.  
@@ -11,3 +11,5 @@ The site deploys automatically to GitHub Pages on every push to main.
 
 ## Pages
 - [Home](index.html)
+- [Custom Properties and Nesting](unit-1/custom-properties/index.html)
+- [Layered Components](unit-2/layered-components/index.html)
