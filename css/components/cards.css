@@ -1,0 +1,27 @@
+.cards {
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+
+    gap: calc(var(--space-medium) * 2);
+}
+
+.card {
+    background: var(--color-surface);
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-base);
+
+    padding: clamp(1rem, 2vw, 1.5rem);
+
+    box-shadow: var(--shadow-base);
+
+    h3 {
+        margin-bottom: var(--space-small);
+    }
+
+    p {
+        color: var(--color-muted);
+        margin-bottom: var(--space-medium);
+    }
+}

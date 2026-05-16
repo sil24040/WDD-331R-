@@ -1,0 +1,161 @@
+/* ========================================
+   TOKENS
+======================================== */
+:root {
+    /* Colors */
+    --color-bg: #f8fafc;
+    --color-text: #1e293b;
+    --color-primary: #2563eb;
+    --color-primary-hover: #1d4ed8;
+    --color-accent: #e0f2fe;
+    --color-muted: #64748b;
+
+    /* Spacing */
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 2rem;
+
+    /* Typography */
+    --font-body: system-ui, sans-serif;
+    --font-size-base: 1rem;
+
+    /* Borders */
+    --radius: 12px;
+}
+
+/* ========================================
+   RESET
+======================================== */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ========================================
+   BASE
+======================================== */
+body {
+    font-family: var(--font-body);
+    font-size: var(--font-size-base);
+    color: var(--color-text);
+    background: var(--color-bg);
+    line-height: 1.6;
+
+    /* clamp requirement */
+    padding: clamp(1rem, 5vw, 3rem);
+
+    a {
+        color: var(--color-primary);
+
+        &:hover {
+            color: var(--color-primary-hover);
+        }
+    }
+}
+
+/* ========================================
+   NAV
+======================================== */
+.site-nav {
+    margin-bottom: var(--space-lg);
+}
+
+/* ========================================
+   HEADER
+======================================== */
+.board-header {
+    text-align: center;
+    margin-bottom: var(--space-lg);
+
+    h1 {
+        /* clamp requirement */
+        font-size: clamp(1.8rem, 4vw, 3rem);
+        margin-bottom: var(--space-sm);
+    }
+
+    p {
+        color: var(--color-muted);
+    }
+}
+
+/* ========================================
+   CARD GROUP
+======================================== */
+.card-group {
+    margin-bottom: var(--space-lg);
+
+    h2 {
+        margin-bottom: var(--space-md);
+    }
+}
+
+/* ========================================
+   CARDS GRID
+======================================== */
+.cards {
+    display: grid;
+
+    /* calc requirement */
+    gap: calc(var(--space-md) * 2);
+
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* ========================================
+   CARD
+======================================== */
+.card {
+    background: white;
+    padding: var(--space-md);
+    border-radius: var(--radius);
+
+    /* fallback requirement */
+    border: 1px solid var(--color-border, #ddd);
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+    .card-tag {
+        font-size: 0.8rem;
+        background: var(--color-accent);
+        padding: 0.25rem 0.5rem;
+        border-radius: var(--radius);
+        display: inline-block;
+        margin-bottom: var(--space-sm);
+    }
+
+    h3 {
+        margin-bottom: var(--space-sm);
+    }
+
+    p {
+        margin-bottom: var(--space-md);
+    }
+
+    .card-meta {
+        display: flex;
+        justify-content: space-between;
+
+        span {
+            font-size: 0.9rem;
+            color: var(--color-muted);
+        }
+
+        a {
+            font-size: 0.9rem;
+        }
+    }
+}
+
+/* ========================================
+   FOOTER
+======================================== */
+.board-footer {
+    text-align: center;
+    margin-top: var(--space-lg);
+    padding-top: var(--space-md);
+    border-top: 1px solid #ccc;
+    color: var(--color-muted);
+}

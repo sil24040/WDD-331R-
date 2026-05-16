@@ -1,0 +1,28 @@
+.cards {
+   display: grid;
+
+   /* uses calc() requirement */
+   gap: calc(var(--space-medium) * 2);
+
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card {
+   background: var(--color-surface);
+   border: 1px solid var(--color-border);
+   border-radius: var(--radius-base);
+
+   /* uses clamp() requirement */
+   padding: clamp(1rem, 2vw, 1.5rem);
+
+   box-shadow: var(--shadow-base);
+
+   h3 {
+       margin-bottom: var(--space-small);
+   }
+
+   p {
+       color: var(--color-muted);
+       margin-bottom: var(--space-medium);
+   }
+}

@@ -1,0 +1,33 @@
+.site-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-medium);
+
+    margin-bottom: var(--space-large);
+    padding: var(--space-medium);
+
+    background: var(--color-surface);
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-base);
+
+    box-shadow: var(--shadow-base);
+
+    a {
+        text-decoration: none;
+        font-weight: 600;
+
+        padding: 0.65rem 1rem;
+
+        border-radius: var(--radius-base);
+
+        &:hover {
+            background: var(--color-accent);
+        }
+
+        &:focus-visible {
+            outline: 3px solid var(--color-focus);
+            outline-offset: 3px;
+        }
+    }
+}

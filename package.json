@@ -1,0 +1,26 @@
+{
+  "name": "wdd-331r-",
+  "version": "1.0.0",
+  "description": "Practice Site for WDD 331R Advanced CSS",
+  "main": "index.js",
+  "scripts": {
+  "build": "lightningcss css/main.css -o dist/styles.css --minify --bundle",
+  "watch": "chokidar \"css/**/*.css\" -c \"npm run build\""
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sil24040/WDD-331R-.git"
+  },
+  "keywords": [],
+  "author": "Sophie Da Silveira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sil24040/WDD-331R-/issues"
+  },
+  "homepage": "https://github.com/sil24040/WDD-331R-#readme",
+  "devDependencies": {
+    "chokidar-cli": "^3.0.0",
+    "lightningcss": "^1.32.0",
+    "lightningcss-cli": "^1.32.0"
+  }
+}

@@ -1,0 +1,14 @@
+.flow > * + * {
+    margin-top: var(--space-medium);
+}
+
+.cluster {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-small) var(--space-medium);
+    align-items: center;
+}
+
+.measure {
+    max-width: 60ch;
+}

@@ -1,0 +1,4 @@
+.temples {
+    display: grid;
+    gap: var(--space-large);
+}
