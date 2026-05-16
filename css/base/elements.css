@@ -2,8 +2,10 @@ body {
     font-family: var(--font-family-body);
     font-size: var(--font-size-base);
     line-height: 1.6;
+
     color: var(--color-text);
     background: var(--color-background);
+
     padding: var(--space-large);
 }
 
@@ -28,11 +30,12 @@ h3 {
 
 a {
     color: var(--color-primary);
+
     text-decoration-thickness: 0.1em;
     text-underline-offset: 0.15em;
 
     &:hover {
-        color: color-mix(in srgb, var(--color-primary), black 15%);
+        color: var(--color-primary-hover);
     }
 
     &:focus-visible {
@@ -45,6 +48,7 @@ a {
 ul,
 ol {
     padding-inline-start: 1.25rem;
+
     display: grid;
     gap: var(--space-small);
 }

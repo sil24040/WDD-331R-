@@ -1,28 +1,28 @@
 .site-nav {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-wrap: wrap;
     gap: var(--space-medium);
+
     margin-bottom: var(--space-large);
-    padding: var(--space-medium) var(--space-large);
+    padding: var(--space-medium);
+
     background: var(--color-surface);
+
     border: 1px solid var(--color-border);
     border-radius: var(--radius-base);
+
     box-shadow: var(--shadow-base);
 
     a {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.35rem;
-        padding: 0.65rem 1rem;
-        border-radius: var(--radius-base);
         text-decoration: none;
         font-weight: 600;
-        transition: background-color 0.15s ease, transform 0.15s ease;
 
-        &:not(.current):hover {
+        padding: 0.65rem 1rem;
+
+        border-radius: var(--radius-base);
+
+        &:hover {
             background: var(--color-accent);
-            transform: translateY(-1px);
         }
 
         &:focus-visible {
