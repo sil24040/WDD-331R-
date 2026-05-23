@@ -1,27 +1,31 @@
 .cards {
-    display: grid;
+  display: grid;
+  gap: var(--spacing-md);
 
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-
-    gap: calc(var(--space-medium) * 2);
+  grid-template-columns:
+    repeat(auto-fit, minmax(min(100%, 280px), 1fr));
 }
 
 .card {
-    background: var(--color-surface);
+  display: grid;
+  gap: var(--spacing-sm);
 
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-base);
+  padding: var(--spacing-lg);
 
-    padding: clamp(1rem, 2vw, 1.5rem);
+  background: var(--color-surface);
 
-    box-shadow: var(--shadow-base);
+  border: 1px solid var(--color-border);
 
-    h3 {
-        margin-bottom: var(--space-small);
-    }
+  border-radius: var(--radius-lg);
 
-    p {
-        color: var(--color-muted);
-        margin-bottom: var(--space-medium);
-    }
+  box-shadow: var(--shadow-sm);
+
+  transition:
+    background-color var(--transition-base),
+    border-color var(--transition-base),
+    color var(--transition-base);
+}
+
+.card p {
+  color: var(--color-text-muted);
 }

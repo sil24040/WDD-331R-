@@ -1,43 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sophie Silveira – Practice Site</title>
-    <link rel="stylesheet" href="dist/styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="js/theme-preference.js"></script>
+  <link rel="stylesheet" href="dist/styles.css">
+
+  <title>Sophie Silveira – Practice Site</title>
 </head>
 <body>
-    <div class="page flow">
-        <header class="hero flow">
-            <p class="eyebrow">WDD 331R Advanced CSS</p>
-            <h1>Sophie Silveira</h1>
-            <p class="measure">
-                Welcome to my Practice Site where I build assignments, explore CSS architecture, and improve my front-end development skills throughout the semester.
-            </p>
-        </header>
+  <div class="page flow">
+    <header class="hero flow">
+      <div class="hero-top">
+        <p class="eyebrow">WDD 331R Advanced CSS</p>
 
-        <nav class="site-nav" aria-label="Assignments">
-            <a href="unit-1/custom-properties/index.html">Custom Properties and Nesting</a>
-            <a href="unit-2/layered-components/index.html">Layered Components</a>
-        </nav>
+        <details class="theme-menu">
+          <summary class="theme-control">
+            <span class="visually-hidden">Color scheme</span>
+          </summary>
+          <div class="theme-extra" role="group" aria-label="Choose color scheme">
+            <label class="theme-control theme-pick" data-theme-pick="light">
+              <input name="theme-preference" type="radio" value="light">
+              <span aria-hidden="true">&#9788;&#65039;</span>
+              <span class="visually-hidden">Light</span>
+            </label>
+            <label class="theme-control theme-pick" data-theme-pick="system">
+              <input name="theme-preference" type="radio" value="system" checked>
+              <span aria-hidden="true">&#9881;&#65039;</span>
+              <span class="visually-hidden">System default</span>
+            </label>
+            <label class="theme-control theme-pick" data-theme-pick="dark">
+              <input name="theme-preference" type="radio" value="dark">
+              <span aria-hidden="true">&#127766;</span>
+              <span class="visually-hidden">Dark</span>
+            </label>
+          </div>
+        </details>
+      </div>
 
-        <main class="section">
-            <h2>Completed Assignments</h2>
+      <h1>Sophie Silveira</h1>
+      <p class="measure">
+        Welcome to my Practice Site where I build assignments, explore CSS architecture, and improve my front-end development skills throughout the semester.
+      </p>
+    </header>
 
-            <div class="cards">
-                <article class="card flow">
-                    <h3>Custom Properties and Nesting</h3>
-                    <p>This assignment focused on CSS variables, nesting, responsive layout, and token systems.</p>
-                    <a href="unit-1/custom-properties/index.html">View assignment</a>
-                </article>
+    <nav class="site-nav" aria-label="Assignments">
+      <a href="unit-1/custom-properties/index.html">Custom Properties and Nesting</a>
+      <a href="unit-2/layered-components/index.html">Layered Components</a>
+    </nav>
 
-                <article class="card flow">
-                    <h3>Layered Components</h3>
-                    <p>This project explored layered architecture, modern selectors, accessibility, and reusable components.</p>
-                    <a href="unit-2/layered-components/index.html">View assignment</a>
-                </article>
-            </div>
-        </main>
-    </div>
+    <main class="section">
+      <h2>Completed Assignments</h2>
+
+      <div class="cards">
+        <article class="card flow">
+          <h3>Custom Properties and Nesting</h3>
+          <p>This assignment focused on CSS variables, nesting, responsive layout, and token systems.</p>
+          <a href="unit-1/custom-properties/index.html">View assignment</a>
+        </article>
+
+        <article class="card flow">
+          <h3>Layered Components</h3>
+          <p>This project explored layered architecture, modern selectors, accessibility, and reusable components.</p>
+          <a href="unit-2/layered-components/index.html">View assignment</a>
+        </article>
+      </div>
+    </main>
+  </div>
 </body>
 </html>

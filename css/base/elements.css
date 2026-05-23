@@ -1,58 +1,35 @@
+html {
+  color-scheme: light dark;
+}
+
 body {
-    font-family: var(--font-family-body);
-    font-size: var(--font-size-base);
-    line-height: 1.6;
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size-md);
+  line-height: 1.6;
 
-    color: var(--color-text);
-    background: var(--color-background);
+  background: var(--color-bg);
+  color: var(--color-text);
 
-    padding: var(--space-large);
+  transition:
+    background-color var(--transition-base),
+    color var(--transition-base);
 }
 
 h1,
 h2,
 h3 {
-    font-weight: 700;
-    line-height: 1.2;
-}
-
-h1 {
-    font-size: clamp(2rem, 4vw, 3rem);
-}
-
-h2 {
-    font-size: clamp(1.5rem, 3vw, 2rem);
-}
-
-h3 {
-    font-size: 1.125rem;
+  color: var(--color-text);
 }
 
 a {
-    color: var(--color-primary);
-
-    text-decoration-thickness: 0.1em;
-    text-underline-offset: 0.15em;
-
-    &:hover {
-        color: var(--color-primary-hover);
-    }
-
-    &:focus-visible {
-        outline: 3px solid var(--color-focus);
-        outline-offset: 3px;
-        border-radius: 4px;
-    }
+  color: var(--color-link);
 }
 
-ul,
-ol {
-    padding-inline-start: 1.25rem;
-
-    display: grid;
-    gap: var(--space-small);
+a:hover {
+  color: var(--color-link-hover);
 }
 
-li {
-    line-height: 1.5;
+::selection {
+  background: var(--color-accent);
+  color: white;
 }
