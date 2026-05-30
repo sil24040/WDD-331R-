@@ -16,3 +16,5 @@
 @import url("./components/temples.css") layer(components);
 
 @import url("./utilities/utilities.css") layer(utilities);
+
+@import url("./components/effects.css") layer(components);

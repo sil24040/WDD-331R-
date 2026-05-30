@@ -41,3 +41,35 @@
   --radius-base: var(--radius-lg);
   --shadow-base: var(--shadow-md);
 }
+
+:root {
+  --shadow-color-light: rgb(15 23 42 / 0.10);
+  --shadow-color-dark: rgb(0 0 0 / 0.35);
+
+  --shadow-sm:
+    0 1px 2px rgb(0 0 0 / 0.08),
+    0 4px 10px rgb(0 0 0 / 0.06);
+
+  --shadow-md:
+    0 2px 4px rgb(0 0 0 / 0.10),
+    0 8px 20px rgb(0 0 0 / 0.08);
+
+  --shadow-lg:
+    0 4px 8px rgb(0 0 0 / 0.12),
+    0 16px 32px rgb(0 0 0 / 0.12);
+
+  --shadow-card: var(--shadow-sm);
+  --shadow-card-hover: var(--shadow-md);
+  --shadow-glass: var(--shadow-lg);
+
+  --effect-hero-overlay-light:
+    linear-gradient(to bottom, rgb(255 255 255 / 0.08), rgb(15 23 42 / 0.35)),
+    radial-gradient(circle at top, rgb(255 255 255 / 0.30), transparent 55%);
+
+  --effect-hero-overlay-dark:
+    linear-gradient(to bottom, rgb(15 23 42 / 0.10), rgb(0 0 0 / 0.45)),
+    radial-gradient(circle at top, rgb(255 255 255 / 0.08), transparent 60%);
+
+  --effect-glass-bg-light: rgb(255 255 255 / 0.55);
+  --effect-glass-bg-dark: rgb(15 23 42 / 0.45);
+}
