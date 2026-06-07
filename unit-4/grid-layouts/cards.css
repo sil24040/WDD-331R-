@@ -1,0 +1,127 @@
+.articles-page {
+    background: var(--color-bg);
+    color: var(--color-text);
+}
+
+.articles-page > header,
+.articles-page > main {
+    inline-size: min(100% - 2rem, 72rem);
+    margin-inline: auto;
+}
+
+.articles-page > header {
+    display: grid;
+    gap: var(--spacing-sm);
+    padding-block: var(--spacing-xl) var(--spacing-lg);
+}
+
+.articles-page > header p {
+    color: var(--color-text-muted);
+}
+
+.articles-page .card-grid {
+    display: grid;
+    gap: var(--spacing-lg);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+    padding-block-end: var(--spacing-xl);
+}
+
+.articles-page .card {
+    display: flex;
+    flex-direction: column;
+    min-block-size: 100%;
+    overflow: hidden;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    transition:
+        transform var(--transition-base),
+        box-shadow var(--transition-base),
+        border-color var(--transition-base);
+}
+
+.articles-page .card:hover {
+    transform: translateY(-4px);
+    border-color: var(--color-border-strong);
+    box-shadow: var(--shadow-md);
+}
+
+.articles-page .card > div:first-child {
+    block-size: 11rem;
+    background:
+        linear-gradient(
+            135deg,
+            color-mix(in srgb, var(--color-accent) 80%, white),
+            color-mix(in srgb, var(--color-accent) 30%, var(--color-surface))
+        );
+}
+
+.articles-page .card:nth-child(2) > div:first-child {
+    background:
+        linear-gradient(
+            135deg,
+            color-mix(in srgb, var(--color-link) 80%, white),
+            color-mix(in srgb, var(--color-link) 35%, var(--color-surface))
+        );
+}
+
+.articles-page .card:nth-child(3) > div:first-child {
+    background:
+        linear-gradient(
+            135deg,
+            color-mix(in srgb, var(--color-text-muted) 70%, white),
+            color-mix(in srgb, var(--color-border) 60%, var(--color-surface))
+        );
+}
+
+.articles-page .card:nth-child(4) > div:first-child {
+    background:
+        linear-gradient(
+            135deg,
+            color-mix(in srgb, var(--color-accent-hover) 80%, white),
+            color-mix(in srgb, var(--color-accent) 30%, var(--color-surface))
+        );
+}
+
+.articles-page .card:nth-child(5) > div:first-child {
+    background:
+        linear-gradient(
+            135deg,
+            color-mix(in srgb, var(--color-border-strong) 80%, white),
+            color-mix(in srgb, var(--color-border) 45%, var(--color-surface))
+        );
+}
+
+.articles-page .card:nth-child(6) > div:first-child {
+    background:
+        linear-gradient(
+            135deg,
+            color-mix(in srgb, var(--color-accent) 65%, white),
+            color-mix(in srgb, var(--color-link) 40%, var(--color-surface))
+        );
+}
+
+.articles-page .card > div:last-child {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    flex: 1;
+    padding-block: var(--spacing-lg);
+    padding-inline: var(--spacing-lg);
+}
+
+.articles-page .card h2 {
+    font-size: var(--font-size-lg);
+}
+
+.articles-page .card p {
+    color: var(--color-text-muted);
+}
+
+.articles-page .card a {
+    margin-block-start: auto;
+    align-self: flex-start;
+    color: var(--color-link);
+    font-weight: 700;
+}
