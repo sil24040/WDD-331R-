@@ -1,25 +1,37 @@
 # WDD 331R Practice Site
 
-**Student:** Sophie Da Silveira  
-**Semester:** Spring 2026  
-**Live Site:** [View Site](https://sil24040.github.io/WDD-331R-/)
+**Student:** Sophie Da Silveira
+**Semester:** Spring 2026
+**Live Site:** https://sil24040.github.io/WDD-331R-/
 
 ## About
-This repository is my Practice Site for WDD 331R: Advanced CSS.  
-Each week I add new pages and styles as I work through the course assignments.  
+
+This repository is my Practice Site for WDD 331R: Advanced CSS.
+
+Each week I add new pages and styles as I work through the course assignments.
+
 The site deploys automatically to GitHub Pages on every push to main.
+
+## Pages
+
+* Home
+* Custom Properties and Nesting
+* Layered Components
+* Visual Effects
+* Editorial Layout
+* Card Grid
 
 ## CSS Architecture
 
 The project uses a layered CSS architecture with:
 
-- Tokens
-- Base styles
-- Layout styles
-- Components
-- Utilities
+* Tokens
+* Base styles
+* Layout styles
+* Components
+* Utilities
 
-### Folder Structure
+## Folder Structure
 
 ```text
 css/
@@ -29,3 +41,12 @@ css/
 ├── tokens/
 ├── utilities/
 └── main.css
+```
+## Pages
+
+* [Home](https://sil24040.github.io/WDD-331R-/)
+* [Custom Properties and Nesting](https://sil24040.github.io/WDD-331R-/unit-1/custom-properties/)
+* [Layered Components](https://sil24040.github.io/WDD-331R-/unit-2/layered-components/)
+* [Visual Effects](https://sil24040.github.io/WDD-331R-/unit-3/visual-effects/)
+* [Editorial Layout](https://sil24040.github.io/WDD-331R-/unit-4/grid-layouts/editorial.html)
+* [Card Grid](https://sil24040.github.io/WDD-331R-/unit-4/grid-layouts/cards.html)
