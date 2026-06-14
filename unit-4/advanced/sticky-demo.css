@@ -28,16 +28,16 @@
 }
 
 .sticky-shell {
-  /* Sticky stopped working when this wrapper used overflow: hidden.
-     I changed it to overflow: clip so the rounded frame still clips
-     without creating an ancestor that cancels sticky positioning. */
-  overflow: clip;
-  border-radius: var(--radius-lg);
+  /* Sticky broke when this wrapper had overflow applied.
+     I removed the overflow so sticky can work correctly,
+     and kept the rounded look on the TOC itself instead. */
+  align-self: start;
 }
 
 .toc {
   position: sticky;
   top: var(--sticky-offset);
+  z-index: 2;
   display: grid;
   gap: var(--spacing-sm);
   padding-block: var(--spacing-lg);
