@@ -31,6 +31,7 @@
   /* Layout */
   --measure: 60ch;
   --page-width: 1100px;
+  --sticky-offset: 1rem;
 
   /* Legacy aliases */
   --space-small: var(--spacing-sm);
@@ -63,12 +64,28 @@
   --shadow-glass: var(--shadow-lg);
 
   --effect-hero-overlay-light:
-    linear-gradient(to bottom, rgb(255 255 255 / 0.08), rgb(15 23 42 / 0.35)),
-    radial-gradient(circle at top, rgb(255 255 255 / 0.30), transparent 55%);
+    linear-gradient(
+      to bottom,
+      rgb(255 255 255 / 0.08),
+      rgb(15 23 42 / 0.35)
+    ),
+    radial-gradient(
+      circle at top,
+      rgb(255 255 255 / 0.30),
+      transparent 55%
+    );
 
   --effect-hero-overlay-dark:
-    linear-gradient(to bottom, rgb(15 23 42 / 0.10), rgb(0 0 0 / 0.45)),
-    radial-gradient(circle at top, rgb(255 255 255 / 0.08), transparent 60%);
+    linear-gradient(
+      to bottom,
+      rgb(15 23 42 / 0.10),
+      rgb(0 0 0 / 0.45)
+    ),
+    radial-gradient(
+      circle at top,
+      rgb(255 255 255 / 0.08),
+      transparent 60%
+    );
 
   --effect-glass-bg-light: rgb(255 255 255 / 0.55);
   --effect-glass-bg-dark: rgb(15 23 42 / 0.45);
