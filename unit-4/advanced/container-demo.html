@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Container Query Demo</title>
+  <link rel="stylesheet" href="../../dist/styles.css">
+  <link rel="stylesheet" href="container-demo.css">
+</head>
+<body class="container-demo-page">
+  <header class="page-header">
+    <h1>Container Query Demo</h1>
+    <p>
+      The same component adapts to a narrow sidebar and a wider main content area.
+    </p>
+  </header>
+
+  <main class="demo-grid">
+    <section class="demo-context demo-context--sidebar">
+      <p class="demo-context__label">Narrow sidebar context</p>
+
+      <article class="feature-panel">
+        <div class="feature-panel__media" aria-hidden="true"></div>
+
+        <div class="feature-panel__body">
+          <p class="feature-panel__eyebrow">Feature block</p>
+          <h2 class="feature-panel__title">Build for the space available</h2>
+          <p class="feature-panel__text">
+            This component stays stacked in a narrow container and switches to a side-by-side layout when the container gets wider.
+          </p>
+
+          <div class="feature-panel__footer">
+            <a class="feature-panel__button" href="#">Learn more</a>
+            <span class="feature-panel__chip">Container query</span>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="demo-context demo-context--main">
+      <p class="demo-context__label">Wide main content context</p>
+
+      <article class="feature-panel">
+        <div class="feature-panel__media" aria-hidden="true"></div>
+
+        <div class="feature-panel__body">
+          <p class="feature-panel__eyebrow">Feature block</p>
+          <h2 class="feature-panel__title">Same component, wider container</h2>
+          <p class="feature-panel__text">
+            In the wider space, the layout changes without any viewport media query. The component responds to its container instead.
+          </p>
+
+          <div class="feature-panel__footer">
+            <a class="feature-panel__button" href="#">Learn more</a>
+            <span class="feature-panel__chip">Container query</span>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

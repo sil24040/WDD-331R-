@@ -1,7 +1,7 @@
 # WDD 331R Practice Site
 
-**Student:** Sophie Da Silveira
-**Semester:** Spring 2026
+**Student:** Sophie Da Silveira  
+**Semester:** Spring 2026  
 **Live Site:** https://sil24040.github.io/WDD-331R-/
 
 ## About
@@ -14,12 +14,14 @@ The site deploys automatically to GitHub Pages on every push to main.
 
 ## Pages
 
-* Home
-* Custom Properties and Nesting
-* Layered Components
-* Visual Effects
-* Editorial Layout
-* Card Grid
+* [Home](https://sil24040.github.io/WDD-331R-/)
+* [Custom Properties and Nesting](https://sil24040.github.io/WDD-331R-/unit-1/custom-properties/)
+* [Layered Components](https://sil24040.github.io/WDD-331R-/unit-2/layered-components/)
+* [Visual Effects](https://sil24040.github.io/WDD-331R-/unit-3/visual-effects/)
+* [Editorial Layout](https://sil24040.github.io/WDD-331R-/unit-4/grid-layouts/editorial.html)
+* [Card Grid](https://sil24040.github.io/WDD-331R-/unit-4/grid-layouts/cards.html)
+* [Container Query Demo](https://sil24040.github.io/WDD-331R-/unit-4/advanced/container-demo.html)
+* [Sticky Demo](https://sil24040.github.io/WDD-331R-/unit-4/advanced/sticky-demo.html)
 
 ## CSS Architecture
 
@@ -41,12 +43,3 @@ css/
 ├── tokens/
 ├── utilities/
 └── main.css
-```
-## Pages
-
-* [Home](https://sil24040.github.io/WDD-331R-/)
-* [Custom Properties and Nesting](https://sil24040.github.io/WDD-331R-/unit-1/custom-properties/)
-* [Layered Components](https://sil24040.github.io/WDD-331R-/unit-2/layered-components/)
-* [Visual Effects](https://sil24040.github.io/WDD-331R-/unit-3/visual-effects/)
-* [Editorial Layout](https://sil24040.github.io/WDD-331R-/unit-4/grid-layouts/editorial.html)
-* [Card Grid](https://sil24040.github.io/WDD-331R-/unit-4/grid-layouts/cards.html)

@@ -24,6 +24,7 @@
     gap: var(--spacing-lg);
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
     padding-block-end: var(--spacing-xl);
+    align-items: start;
 }
 
 .articles-page .card {
@@ -124,4 +125,43 @@
     align-self: flex-start;
     color: var(--color-link);
     font-weight: 700;
+}
+
+/* Subgrid enhancement */
+@supports (grid-template-rows: subgrid) {
+    .articles-page .card-grid {
+        align-items: start;
+        row-gap: var(--spacing-xl);
+    }
+
+    .articles-page .card {
+        display: grid;
+        grid-template-rows: subgrid;
+        grid-row: span 4;
+        row-gap: var(--spacing-sm);
+    }
+
+    .articles-page .card > div:last-child {
+        display: contents;
+    }
+
+    .articles-page .card > div:first-child {
+        grid-row: 1;
+    }
+
+    .articles-page .card h2 {
+        grid-row: 2;
+        margin: 0;
+    }
+
+    .articles-page .card p {
+        grid-row: 3;
+        margin: 0;
+    }
+
+    .articles-page .card a {
+        grid-row: 4;
+        margin-block-start: 0;
+        align-self: start;
+    }
 }

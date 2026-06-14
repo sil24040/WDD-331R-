@@ -1,0 +1,100 @@
+.sticky-demo-page {
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+.sticky-demo-page .page-header,
+.sticky-demo-page .sticky-layout,
+.sticky-demo-page .page-footer {
+  inline-size: min(100% - 2rem, 72rem);
+  margin-inline: auto;
+}
+
+.sticky-demo-page .page-header {
+  display: grid;
+  gap: var(--spacing-sm);
+  padding-block: var(--spacing-xl) var(--spacing-lg);
+}
+
+.sticky-demo-page .page-header p {
+  color: var(--color-text-muted);
+  max-inline-size: 60ch;
+}
+
+.sticky-layout {
+  display: grid;
+  gap: var(--spacing-xl);
+  padding-block-end: var(--spacing-xl);
+}
+
+.sticky-shell {
+  /* Sticky stopped working when this wrapper used overflow: hidden.
+     I changed it to overflow: clip so the rounded frame still clips
+     without creating an ancestor that cancels sticky positioning. */
+  overflow: clip;
+  border-radius: var(--radius-lg);
+}
+
+.toc {
+  position: sticky;
+  top: var(--sticky-offset);
+  display: grid;
+  gap: var(--spacing-sm);
+  padding-block: var(--spacing-lg);
+  padding-inline: var(--spacing-lg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.toc h2 {
+  margin: 0 0 var(--spacing-sm);
+}
+
+.toc a {
+  display: inline-flex;
+  padding-block: 0.45rem;
+  padding-inline: 0.75rem;
+  border-radius: 999px;
+  color: var(--color-link);
+  text-decoration: none;
+}
+
+.toc a:hover {
+  background: color-mix(in srgb, var(--color-accent) 10%, var(--color-surface));
+}
+
+.story {
+  display: grid;
+  gap: var(--spacing-xl);
+  padding-block: var(--spacing-lg);
+}
+
+.story section {
+  display: grid;
+  gap: var(--spacing-md);
+  padding-block: var(--spacing-lg);
+  padding-inline: var(--spacing-lg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.story p {
+  color: var(--color-text-muted);
+  max-inline-size: 65ch;
+}
+
+.sticky-demo-page .page-footer {
+  padding-block-end: var(--spacing-xl);
+  color: var(--color-text-muted);
+}
+
+@media (min-width: 900px) {
+  .sticky-layout {
+    grid-template-columns: 18rem minmax(0, 1fr);
+    align-items: start;
+  }
+}
