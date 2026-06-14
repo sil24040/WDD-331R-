@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sticky Demo</title>
+  <link rel="stylesheet" href="../../dist/styles.css">
+  <link rel="stylesheet" href="sticky-demo.css">
+</head>
+<body class="sticky-demo-page">
+  <header class="page-header">
+    <h1>Sticky Demo</h1>
+    <p>
+      A sticky table of contents stays visible while the article scrolls.
+    </p>
+  </header>
+
+  <main class="sticky-layout">
+    <aside class="sticky-shell">
+      <nav class="toc">
+        <h2>On this page</h2>
+        <a href="#intro">Introduction</a>
+        <a href="#section-1">Section One</a>
+        <a href="#section-2">Section Two</a>
+        <a href="#section-3">Section Three</a>
+        <a href="#section-4">Section Four</a>
+      </nav>
+    </aside>
+
+    <article class="story">
+      <section id="intro">
+        <h2>Introduction</h2>
+        <p>
+          Sticky content is useful when readers need persistent navigation or a section label that follows the page as they scroll.
+        </p>
+        <p>
+          This page is long enough to make the sticky behavior obvious.
+        </p>
+      </section>
+
+      <section id="section-1">
+        <h2>Section One</h2>
+        <p>
+          The sticky element needs a top offset or it will not stick. The page also needs a scrollable height, so the article is filled with multiple sections and paragraphs.
+        </p>
+        <p>
+          Sticky is easy to break if an ancestor between the sticky item and its scroll container has the wrong overflow setting.
+        </p>
+      </section>
+
+      <section id="section-2">
+        <h2>Section Two</h2>
+        <p>
+          If a wrapper has overflow hidden, sticky can stop working because the browser treats that ancestor as a clipping context.
+        </p>
+        <p>
+          The fix is to keep the clipping effect without creating the wrong overflow behavior.
+        </p>
+      </section>
+
+      <section id="section-3">
+        <h2>Section Three</h2>
+        <p>
+          This section continues the scroll so you can see the sticky navigation stay in view while the article moves past it.
+        </p>
+        <p>
+          The layout uses a two-column grid on larger screens and stacks on small screens.
+        </p>
+      </section>
+
+      <section id="section-4">
+        <h2>Section Four</h2>
+        <p>
+          A sticky sidebar is useful for table of contents links, filters, or summary notes.
+        </p>
+        <p>
+          Once the page scrolls enough, the sticky element should hold its place until the end of its parent container.
+        </p>
+      </section>
+    </article>
+  </main>
+
+  <footer class="page-footer">
+    <p>&copy; 2026 Practice Site. All rights reserved.</p>
+  </footer>
+</body>
+</html>
