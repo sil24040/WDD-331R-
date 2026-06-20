@@ -31,13 +31,12 @@
   /* Sticky broke when this wrapper had overflow applied.
      I removed the overflow so sticky can work correctly,
      and kept the rounded look on the TOC itself instead. */
-  align-self: start;
 }
 
 .toc {
   position: sticky;
   top: var(--sticky-offset);
-  z-index: 2;
+  z-index: 10;
   display: grid;
   gap: var(--spacing-sm);
   padding-block: var(--spacing-lg);
@@ -95,6 +94,5 @@
 @media (min-width: 900px) {
   .sticky-layout {
     grid-template-columns: 18rem minmax(0, 1fr);
-    align-items: start;
   }
 }
