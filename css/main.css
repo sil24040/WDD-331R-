@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600..900&display=swap");
+
 @layer tokens, base, layout, components, utilities;
 
 @import url("./tokens/colors.css") layer(tokens);
@@ -13,8 +15,7 @@
 @import url("./components/forms.css") layer(components);
 @import url("./components/nav.css") layer(components);
 @import url("./components/theme-toggle.css") layer(components);
+@import url("./components/effects.css") layer(components);
 @import url("./components/temples.css") layer(components);
 
 @import url("./utilities/utilities.css") layer(utilities);
-
-@import url("./components/effects.css") layer(components);

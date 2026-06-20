@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  font-family: var(--font-family-sans);
+  font-family: var(--font-family-body);
   font-size: var(--font-size-body);
   line-height: var(--line-height-body);
 
@@ -15,22 +15,31 @@ body {
     color var(--transition-base);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family-heading);
+  font-weight: 700;
+  color: var(--color-text);
+  margin: 0;
+}
+
 h1 {
   font-size: var(--font-size-display);
   line-height: var(--line-height-display);
-  color: var(--color-text);
 }
 
 h2 {
   font-size: var(--font-size-heading-lg);
   line-height: var(--line-height-heading-lg);
-  color: var(--color-text);
 }
 
 h3 {
   font-size: var(--font-size-heading-md);
   line-height: var(--line-height-heading-md);
-  color: var(--color-text);
 }
 
 h4,
@@ -38,7 +47,14 @@ h5,
 h6 {
   font-size: var(--font-size-heading-sm);
   line-height: var(--line-height-heading-sm);
-  color: var(--color-text);
+}
+
+small,
+.eyebrow,
+.byline,
+.caption {
+  font-size: var(--font-size-caption);
+  line-height: var(--line-height-caption);
 }
 
 a {

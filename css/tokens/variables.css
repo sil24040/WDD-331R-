@@ -2,6 +2,8 @@
   /* Typography */
   --font-family-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --font-family-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  --font-family-body: var(--font-family-sans);
+  --font-family-heading: "Fraunces", Georgia, "Times New Roman", serif;
 
   /* Type scale */
   --font-size-xs: clamp(1.1rem, 0.15vw + 1.06rem, 1.2rem);
@@ -13,6 +15,15 @@
   --font-size-3xl: clamp(2.8rem, 0.7vw + 2.63rem, 3rem);
   --font-size-4xl: clamp(3.3rem, 0.9vw + 3.08rem, 3.6rem);
 
+  /* Semantic typography tokens */
+  --font-size-body: var(--font-size-md);
+  --font-size-body-sm: var(--font-size-sm);
+  --font-size-caption: var(--font-size-xs);
+  --font-size-heading-sm: var(--font-size-xl);
+  --font-size-heading-md: var(--font-size-2xl);
+  --font-size-heading-lg: var(--font-size-3xl);
+  --font-size-display: var(--font-size-4xl);
+
   /* Line heights */
   --line-height-xs: 1.4;
   --line-height-sm: 1.45;
@@ -23,15 +34,7 @@
   --line-height-3xl: 1.15;
   --line-height-4xl: 1.1;
 
-  /* Semantic typography tokens */
-  --font-size-body: var(--font-size-md);
-  --font-size-body-sm: var(--font-size-sm);
-  --font-size-caption: var(--font-size-xs);
-  --font-size-heading-sm: var(--font-size-xl);
-  --font-size-heading-md: var(--font-size-2xl);
-  --font-size-heading-lg: var(--font-size-3xl);
-  --font-size-display: var(--font-size-4xl);
-
+  /* Semantic line-height tokens */
   --line-height-body: var(--line-height-md);
   --line-height-body-sm: var(--line-height-sm);
   --line-height-caption: var(--line-height-xs);
@@ -71,8 +74,7 @@
   --space-small: var(--spacing-sm);
   --space-medium: var(--spacing-md);
   --space-large: var(--spacing-lg);
-  --font-family-body: var(--font-family-sans);
-  --font-size-base: var(--font-size-md);
+  --font-size-base: var(--font-size-body);
   --radius-base: var(--radius-lg);
   --shadow-base: var(--shadow-md);
 }
