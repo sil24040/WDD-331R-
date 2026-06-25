@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600..900&display=swap" rel="stylesheet">
+
+  <script src="js/theme-preference.js"></script>
+  <link rel="stylesheet" href="dist/styles.css">
+
+  <title>Sophie Silveira – Contact</title>
+</head>
+<body class="contact-page">
+  <div class="page flow">
+    <header class="hero flow">
+      <div class="hero-top">
+        <a href="index.html" class="site-home">&larr; Home</a>
+
+        <details class="theme-menu">
+          <summary class="theme-control">
+            <span class="visually-hidden">Color scheme</span>
+          </summary>
+          <div class="theme-extra" role="group" aria-label="Choose color scheme">
+            <label class="theme-control theme-pick" data-theme-pick="light">
+              <input name="theme-preference" type="radio" value="light">
+              <span aria-hidden="true">&#9788;&#65039;</span>
+              <span class="visually-hidden">Light</span>
+            </label>
+            <label class="theme-control theme-pick" data-theme-pick="system">
+              <input name="theme-preference" type="radio" value="system" checked>
+              <span aria-hidden="true">&#9881;&#65039;</span>
+              <span class="visually-hidden">System default</span>
+            </label>
+            <label class="theme-control theme-pick" data-theme-pick="dark">
+              <input name="theme-preference" type="radio" value="dark">
+              <span aria-hidden="true">&#127766;</span>
+              <span class="visually-hidden">Dark</span>
+            </label>
+          </div>
+        </details>
+      </div>
+
+      <p class="eyebrow">WDD 331R Advanced CSS</p>
+      <h1>Contact Me</h1>
+      <p class="measure">
+        Send a message if you want to connect about design, development, or school projects.
+      </p>
+    </header>
+
+    <main class="section">
+      <section class="card">
+        <h2>Contact Form</h2>
+
+        <form class="contact-form">
+          <div class="form-field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required>
+          </div>
+
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+          </div>
+
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" minlength="10" required></textarea>
+          </div>
+
+          <div class="form-field form-check">
+            <input type="checkbox" id="updates" name="updates">
+            <label for="updates">Subscribe to updates</label>
+          </div>
+
+          <button type="submit" class="btn primary">Send Message</button>
+        </form>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

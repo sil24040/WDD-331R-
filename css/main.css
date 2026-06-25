@@ -17,3 +17,80 @@
 @import url("./components/temples.css") layer(components);
 
 @import url("./utilities/utilities.css") layer(utilities);
+
+@media print {
+  @page {
+    margin: 0.5in;
+  }
+
+  * {
+    background: transparent !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    color: #000 !important;
+  }
+
+  html {
+    color-scheme: light;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  body {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 11pt;
+    line-height: 1.4;
+    background: #fff;
+  }
+
+  nav,
+  .theme-menu,
+  .hero-top,
+  .site-nav,
+  .btn,
+  button,
+  form,
+  .contact-form,
+  .form-field,
+  .page-footer a {
+    display: none !important;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+    font-size: 9pt;
+    word-break: break-word;
+  }
+
+  .resume-page .page,
+  .contact-page .page {
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .resume-card,
+  .resume-entry,
+  .card,
+  section,
+  article {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  p,
+  li {
+    orphans: 3;
+    widows: 3;
+  }
+
+  .resume-card {
+    border: 1px solid #000;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .resume-tags {
+    display: block;
+  }
+}
