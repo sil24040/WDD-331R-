@@ -1,7 +1,7 @@
 # WDD 331R Practice Site
 
-**Student:** Sophie Da Silveira
-**Semester:** Spring 2026
+**Student:** Sophie Da Silveira  
+**Semester:** Spring 2026  
 **Live Site:** https://sil24040.github.io/WDD-331R-/
 
 ## About
@@ -22,15 +22,14 @@ The site deploys automatically to GitHub Pages on every push to main.
 * [Card Grid](https://sil24040.github.io/WDD-331R-/unit-4/grid-layouts/cards.html)
 * [Container Query Demo](https://sil24040.github.io/WDD-331R-/unit-4/advanced/container-demo.html)
 * [Sticky Demo](https://sil24040.github.io/WDD-331R-/unit-4/advanced/sticky-demo.html)
+* [Resume](https://sil24040.github.io/WDD-331R-/resume.html)
+* [Contact](https://sil24040.github.io/WDD-331R-/contact.html)
 
 ## Typography System
 
-Typography tokens are stored in:
-
-css/tokens/variables.css
+Typography tokens are stored in `css/tokens/variables.css`.
 
 The site uses:
-
 * Inter for body text
 * Fraunces for headings
 
@@ -48,6 +47,7 @@ The project uses a layered CSS architecture with:
 
 ## Folder Structure
 
+```text
 css/
 ├── base/
 ├── components/

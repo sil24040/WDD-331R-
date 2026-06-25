@@ -6,10 +6,8 @@ body {
   font-family: var(--font-family-body);
   font-size: var(--font-size-body);
   line-height: var(--line-height-body);
-
   background: var(--color-bg);
   color: var(--color-text);
-
   transition:
     background-color var(--transition-base),
     color var(--transition-base);
@@ -68,4 +66,49 @@ a:hover {
 ::selection {
   background: var(--color-accent);
   color: white;
+}
+
+form {
+  accent-color: var(--color-accent);
+}
+
+label {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-weight: 600;
+}
+
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  color: var(--color-text);
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  width: auto;
+}
+
+textarea {
+  min-block-size: 10rem;
+  max-block-size: 24rem;
+  resize: vertical;
+}
+
+@supports (field-sizing: content) {
+  textarea {
+    field-sizing: content;
+  }
 }
